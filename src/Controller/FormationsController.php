@@ -14,7 +14,7 @@ class FormationsController extends AbstractController
     public function index(): Response
     {
         return $this->render('formations/index.html.twig', [
-            'controller_name' => 'FormationsController',
+            'controller_name' => 'ProstagesController',
         ]);
     }
 }

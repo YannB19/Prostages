@@ -11,10 +11,9 @@ class StagesController extends AbstractController
     /**
      * @Route("/stages/{id}", name="stages")
      */
-    public function index(): Response
+    public function index($id): Response
     {
-        return $this->render('prostages/index.html.twig', [
-            'controller_name' => 'ProstagesController',
-        ]);
+        return $this->render('stages/index.html.twig',
+        ['idStage' => $id]);
     }
 }
